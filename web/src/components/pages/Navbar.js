@@ -5,13 +5,14 @@ import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { MdFingerprint } from 'react-icons/md';
 import { Button } from './Button';
+import './Navbar.css';
 
 function Navbar() {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
 
     const handleClick = () => setClick(!click);
-    const handleMobileMenu = () => setClick(false);
+    const closeMobileMenu = () => setClick(false);
 
     const showButton = () => {
         if(window.innerWidth <= 960) {
@@ -19,14 +20,17 @@ function Navbar() {
         } else {
             setButton(true);
         }
-    }
+    };
+
+    window.addEventListener('resize', showButton);
+    
     return (
         <>
             <div className='navbar'>
                 <div className='navbar-container container'>
                     
                     <Link to='/' className='navbar-logo'>
-                        <MdFingerprint classNama='navbar-icon'/>
+                        <MdFingerprint className='navbar-icon'/>
                         LAVISH
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
@@ -46,7 +50,7 @@ function Navbar() {
                         </li>
 
                         <li className='nav-item'>
-                            <Link to='/products' className='nav-link'>
+                            <Link to='/products' className='nav-links'>
                                 Products
                             </Link>
                         </li>

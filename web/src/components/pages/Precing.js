@@ -16,7 +16,7 @@ function Precing() {
         <IconContext.Provider value={{color: '#ffff', size: 64}}>
             <div className='precing__section'>
                 <div className='precing__wrapper'>
-                    <h1 className='precing__heading'>Precing</h1>
+                    <h1 className='precing__heading'>Planos</h1>
                     <div className='precing__container'>
                         <Link to='/sign-up' className='precing__container-card'>
                             <div className='precing__container-cardInfo'>
@@ -24,15 +24,15 @@ function Precing() {
                                     <FaFire/>
                                 </div>
                                 <h3>Starter</h3>
-                                <h4>$8.99</h4>
-                                <p>per month</p>
+                                <h4>R$8.99</h4>
+                                <p>por mês</p>
                                 <ul className='precing__container-features'>
-                                    <li>100 Transactions</li>
+                                    <li>100 Transações</li>
                                     <li>2% Cash Back</li>
-                                    <li>$10,00 Limit</li>
+                                    <li>R$10,00 Limit</li>
                                 </ul>
                                 <Button buttonSize='btn--wide' buttonColor='primary'>
-                                    Choose Plan
+                                    Comprar
                                 </Button>
                             </div>
                         </Link>
@@ -43,15 +43,15 @@ function Precing() {
                                     <BsXDiamondFill/>
                                 </div>
                                 <h3>Gold</h3>
-                                <h4>$29.99</h4>
-                                <p>per month</p>
+                                <h4>R$29.99</h4>
+                                <p>por mês</p>
                                 <ul className='precing__container-features'>
-                                    <li>100 Transactions</li>
+                                    <li>100 Transações</li>
                                     <li>3.5% Cash Back</li>
-                                    <li>$100,00 Limit</li>
+                                    <li>R$100,00 Limite</li>
                                 </ul>
                                 <Button buttonSize='btn--wide' buttonColor='blue'>
-                                    Choose Plan
+                                    Comprar
                                 </Button>
                             </div>
                         </Link>
@@ -62,15 +62,15 @@ function Precing() {
                                     <GiCrystalize/>
                                 </div>
                                 <h3>Diamond</h3>
-                                <h4>$99.99</h4>
-                                <p>per month</p>
+                                <h4>R$99.99</h4>
+                                <p>por mês</p>
                                 <ul className='precing__container-features'>
-                                    <li>Unlimited Transactions</li>
+                                    <li>Transações ilimitadas</li>
                                     <li>5% Cash Back</li>
-                                    <li>Unlimited Speed</li>
+                                    <li>Velocidade ilimitada</li>
                                 </ul>
                                 <Button buttonSize='btn--wide' buttonColor='primary'>
-                                    Choose Plan
+                                    Comprar
                                 </Button>
                             </div>
                         </Link>

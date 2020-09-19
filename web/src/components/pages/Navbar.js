@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import { Link } from 'react-router-dom';
 
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaHome } from 'react-icons/fa';
 import { MdFingerprint } from 'react-icons/md';
 import { Button } from './Button';
 import './Navbar.css';
@@ -37,7 +37,7 @@ function Navbar() {
                         
                         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
                             <MdFingerprint className='navbar-icon'/>
-                            LAVISH
+                            Generoso
                         </Link>
                         <div className='menu-icon' onClick={handleClick}>
                             {click ? <FaTimes/> : <FaBars/>}
@@ -45,19 +45,19 @@ function Navbar() {
                         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                             <li className='nav-item'>
                                 <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                                    Home
+                                    <FaHome size={27}/>
                                 </Link>
                             </li>
 
                             <li className='nav-item'>
                                 <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
-                                    Services
+                                    Serviços
                                 </Link>
                             </li>
 
                             <li className='nav-item'>
                                 <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
-                                    Products
+                                    Produtos
                                 </Link>
                             </li>
 
@@ -67,7 +67,7 @@ function Navbar() {
                                         to='/sign-up'
                                         className='btn-link'>
                                         <Button buttonStyle='btn--outline'>
-                                            SIGN UP
+                                            INSCRRVER-SE
                                         </Button>
                                     </Link>
                                 ): (

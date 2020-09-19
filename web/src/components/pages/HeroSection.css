@@ -22,16 +22,16 @@
     padding-left: 15px;
     flex: 1;
     max-width: 50%;
-    flex-basis: 50%;
+    flex-basis: 43%;
 }
 
-.home__hero-text-wrapper {
+ .home__hero-text-wrapper {
     max-width: 540px;
     padding-top: 0;
     padding-bottom: 60px;
 }
 
-.top-line {
+ .top-line {
     color: #f00946;
     font-size: 16px;
     line-height: 16px;
@@ -56,7 +56,7 @@
     background-color: #1c2237;
 }
 
-.home__hero-subtitle {
+ .home__hero-subtitle {
     max-width: 440px;
     margin-bottom: 35px;
     font-size: 18px;
@@ -78,4 +78,22 @@ img {
     max-width: 100%;
     vertical-align: middle;
     display: inline-block;
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home__hero-text-wrapper {
+        padding-bottom: 65px;
+    }
+
+    .col {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
 }
